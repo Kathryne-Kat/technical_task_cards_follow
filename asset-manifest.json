@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Technical_task_follow/static/css/main.7acaea2f.css",
+    "main.js": "/Technical_task_follow/static/js/main.07d3183d.js",
+    "index.html": "/Technical_task_follow/index.html",
+    "main.7acaea2f.css.map": "/Technical_task_follow/static/css/main.7acaea2f.css.map",
+    "main.07d3183d.js.map": "/Technical_task_follow/static/js/main.07d3183d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.07d3183d.js"
+  ]
+}
