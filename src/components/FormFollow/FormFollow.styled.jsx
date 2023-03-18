@@ -1,22 +1,24 @@
 import styled from 'styled-components';
 import bgPicture from '../../img/picture2_1.svg';
 
+export const Wrap = styled.section`
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const Section = styled.section`
-  width: 380px;
+  width: 280px;
   height: 460px;
   display: block;
-
-  /* background: linear-gradient(
-    114.99deg,
-    #471ca9 -0.99%,
-    #5736a3 54.28%,
-    #4b2a99 78.99%
-  ); */
-  background: url(${bgPicture}) center 36px / 308px 168px no-repeat,
+  background: url(${bgPicture}) center 28px / 308px 168px no-repeat,
     linear-gradient(114.99deg, #471ca9 -0.99%, #5736a3 54.28%, #4b2a99 78.99%);
-
   box-shadow: -2.6px 6.9px 20.6px rgba(0, 0, 0, 0.23);
   border-radius: 20px;
+  @media (min-width: 480px) {
+    width: 380px;
+  }
 `;
 
 export const Logo = styled.img`
@@ -27,29 +29,6 @@ export const Logo = styled.img`
   height: 22px;
 `;
 
-// export const ImgSvg = styled.img`
-//   /* margin-top: 20px; */
-//   margin-left: 35px;
-//   display: block;
-//   margin: 0 auto;
-//   width: 308px;
-//   height: 168px;
-//   animation: animateX30Y30 5s infinite 3s;
-//   @keyframes animateX30Y30 {
-//     0% {
-//       transform: skew(0deg);
-//     }
-
-//     50% {
-//       transform: skew(5deg, 5deg);
-//     }
-
-//     100% {
-//       transform: skew(0deg);
-//     }
-//   }
-// `;
-
 export const AvatarBorder = styled.div`
   position: relative;
   border-top: none;
@@ -57,17 +36,20 @@ export const AvatarBorder = styled.div`
   border-right: none;
   margin-top: 20px;
   margin-top: 172px;
-  width: 380px;
+  min-width: 280px;
   height: 8px;
   background: #ebd8ff;
   box-shadow: 0px 3.4px 3.4px rgba(0, 0, 0, 0.06),
     inset 0px -1.7px 3.4px #ae7be3, inset 0px 3.4px 2.6px #fbf8ff;
+  @media (min-width: 480px) {
+    width: 380px;
+  }
 `;
 
 export const Avatar = styled.img`
   position: absolute;
   top: -40px;
-  left: 150px;
+  left: 100px;
   display: block;
   width: 64px;
   height: 64px;
@@ -81,15 +63,10 @@ export const Avatar = styled.img`
   box-shadow: 0px 4.4px 4.4px rgba(0, 0, 0, 0.06),
     inset 0px -2.2px 4.4px #ae7be3, inset 0px 1px 3.3px #fbf8ff;
   border-radius: 50%;
-  /* &::after {
-    content: '';
-    display: block;
-    height: 8px;
-     border: 8px solid #ebd8ff; 
-    background: #ebd8ff;
-    box-shadow: 0px 3.4px 3.4px rgba(0, 0, 0, 0.06),
-      inset 0px -1.7px 3.4px #ae7be3, inset 0px 3.4px 2.6px #fbf8ff;
-  } */
+  @media (min-width: 480px) {
+    top: -40px;
+    left: 150px;
+  }
 `;
 
 export const Tweets = styled.p`
@@ -131,8 +108,6 @@ export const Button = styled.button`
   text-align: center;
   text-transform: uppercase;
   color: #373737;
-
-  /* background: #ebd8ff; */
   box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
   border: none;
   border-radius: 10.3px;
