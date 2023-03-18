@@ -1,14 +1,7 @@
 import styled from 'styled-components';
-import bgPicture from '../../img/picture2_1.svg';
+import bgPicture from '../../img/picture.svg';
 
-export const Wrap = styled.section`
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const Section = styled.section`
+export const Card = styled.li`
   width: 280px;
   height: 460px;
   display: block;
@@ -22,19 +15,15 @@ export const Section = styled.section`
 `;
 
 export const Logo = styled.img`
-  margin-top: 20px;
-  margin-left: 20px;
   display: block;
+  padding-top: 20px;
+  margin-left: 20px;
   width: 76px;
   height: 22px;
 `;
 
 export const AvatarBorder = styled.div`
   position: relative;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  margin-top: 20px;
   margin-top: 172px;
   min-width: 280px;
   height: 8px;
@@ -111,4 +100,26 @@ export const Button = styled.button`
   box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
   border: none;
   border-radius: 10.3px;
+  background-color: #ebd8ff;
+`;
+
+export const ButtonActive = styled.button`
+  display: block;
+  margin: 0 auto;
+  margin-top: 26px;
+
+  width: 196px;
+  height: 50px;
+
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  color: #373737;
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 10.3px;
+  background-color: #5cd3a8;
 `;

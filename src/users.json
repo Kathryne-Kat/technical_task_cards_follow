@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "user": "Elon Musk",
+    "tweets": 777,
+    "followers": 100500,
+    "avatar": "https://randomuser.me/api/portraits/women/20.jpg",
+    "isRefresh": false
+  },
+  {
+    "id": 2,
+    "user": "Mary Austin",
+    "tweets": 111,
+    "followers": 77100,
+    "avatar": "https://randomuser.me/api/portraits/women/17.jpg",
+    "isRefresh": false
+  },
+  {
+    "id": 3,
+    "user": " Marcus Schneider",
+    "tweets": 222,
+    "followers": 66200,
+    "avatar": "https://randomuser.me/api/portraits/men/10.jpg",
+    "isRefresh": false
+  },
+  {
+    "id": 4,
+    "user": " Ollie Heaney",
+    "tweets": 333,
+    "followers": 33400,
+    "avatar": "https://randomuser.me/api/portraits/women/14.jpg",
+    "isRefresh": false
+  },
+  {
+    "id": 5,
+    "user": "Jerry Zemlak",
+    "tweets": 444,
+    "followers": 6700,
+    "avatar": "https://randomuser.me/api/portraits/men/45.jpg",
+    "isRefresh": false
+  },
+  {
+    "id": 6,
+    "user": " Maggie Monroe",
+    "tweets": 555,
+    "followers": 150800,
+    "avatar": "https://randomuser.me/api/portraits/women/60.jpg",
+    "isRefresh": false
+  },
+  {
+    "id": 7,
+    "user": " Kira Heaney",
+    "tweets": 333,
+    "followers": 33400,
+    "avatar": "https://randomuser.me/api/portraits/women/10.jpg",
+    "isRefresh": false
+  },
+  {
+    "id": 8,
+    "user": "Teri Zemlak",
+    "tweets": 444,
+    "followers": 6700,
+    "avatar": "https://randomuser.me/api/portraits/men/40.jpg",
+    "isRefresh": false
+  },
+  {
+    "id": 9,
+    "user": " Marsha Monroe",
+    "tweets": 555,
+    "followers": 150800,
+    "avatar": "https://randomuser.me/api/portraits/women/54.jpg",
+    "isRefresh": false
+  }
+]

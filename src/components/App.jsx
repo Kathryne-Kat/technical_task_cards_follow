@@ -1,9 +1,9 @@
-import FormFollow from './FormFollow/FormFollow';
+import CardsList from './CardsList/CardsList';
 
 export const App = () => {
   return (
     <>
-      <FormFollow />
+      <CardsList />
     </>
   );
 };
