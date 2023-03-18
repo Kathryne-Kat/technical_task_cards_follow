@@ -1,19 +1,20 @@
 import styled from 'styled-components';
+import bgPicture from '../../img/picture2_1.svg';
 
 export const Section = styled.section`
   width: 380px;
   height: 460px;
   display: block;
 
-  background: linear-gradient(
+  /* background: linear-gradient(
     114.99deg,
     #471ca9 -0.99%,
     #5736a3 54.28%,
     #4b2a99 78.99%
-  );
-  /* background-image: url('../../img/picture2.png');
-  background-position: 20px 20px;
-  background-size: 308px 168px; */
+  ); */
+  background: url(${bgPicture}) center 36px / 308px 168px no-repeat,
+    linear-gradient(114.99deg, #471ca9 -0.99%, #5736a3 54.28%, #4b2a99 78.99%);
+
   box-shadow: -2.6px 6.9px 20.6px rgba(0, 0, 0, 0.23);
   border-radius: 20px;
 `;
@@ -26,28 +27,28 @@ export const Logo = styled.img`
   height: 22px;
 `;
 
-export const ImgSvg = styled.img`
-  /* margin-top: 20px; */
-  margin-left: 35px;
-  display: block;
-  margin: 0 auto;
-  width: 308px;
-  height: 168px;
-  animation: animateX30Y30 5s infinite 3s;
-  @keyframes animateX30Y30 {
-    0% {
-      transform: skew(0deg);
-    }
+// export const ImgSvg = styled.img`
+//   /* margin-top: 20px; */
+//   margin-left: 35px;
+//   display: block;
+//   margin: 0 auto;
+//   width: 308px;
+//   height: 168px;
+//   animation: animateX30Y30 5s infinite 3s;
+//   @keyframes animateX30Y30 {
+//     0% {
+//       transform: skew(0deg);
+//     }
 
-    50% {
-      transform: skew(5deg, 5deg);
-    }
+//     50% {
+//       transform: skew(5deg, 5deg);
+//     }
 
-    100% {
-      transform: skew(0deg);
-    }
-  }
-`;
+//     100% {
+//       transform: skew(0deg);
+//     }
+//   }
+// `;
 
 export const AvatarBorder = styled.div`
   position: relative;
@@ -55,6 +56,7 @@ export const AvatarBorder = styled.div`
   border-left: none;
   border-right: none;
   margin-top: 20px;
+  margin-top: 172px;
   width: 380px;
   height: 8px;
   background: #ebd8ff;

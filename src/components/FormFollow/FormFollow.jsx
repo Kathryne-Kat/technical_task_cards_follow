@@ -13,11 +13,11 @@ import avatar from '../../img/Hansel.svg';
 import logo from '../../img/Logo.svg';
 import imgSvg from '../../img/picture2_1.svg';
 
-function FormFollow(props) {
-  let n = 100500;
+function FormFollow() {
+  const initialValue = 100500;
   let btn = 'follow';
   const [follow, setFollow] = useState(
-    () => JSON.parse(localStorage.getItem('follow')) ?? n
+    () => JSON.parse(localStorage.getItem('follow')) ?? initialValue
   ); // 500 - prevState
 
   useEffect(() => {
@@ -29,35 +29,35 @@ function FormFollow(props) {
   const onHandleClick = () => {
     setFollow(prevState => {
       // return prevState + 1;
-      if (prevState === n) {
+      if (prevState === initialValue) {
         return prevState + 1;
-      }
-      if (prevState === n + 1) {
+      } else {
         return prevState - 1;
       }
     });
     console.log(follow);
   };
-  if (follow > n) {
+  if (follow > initialValue) {
     btn = 'following';
-  } else if (follow === n) {
+  } else if (follow === initialValue) {
     btn = 'follow';
   }
-  let str = String(follow);
-  console.log(str.slice(0, 3) + ',' + str.slice(3, 6));
-  console.log();
-  //{String(follow.slice(0, 3) + ',' + follow.slice(3, 6))}
+
+  const followLimited = (follow / 1000).toFixed(3).replace('.', ',');
+
   return (
     <Section>
       <Logo src={logo} alt="" />
-      <ImgSvg src={imgSvg} alt="" />
+      {/* <ImgSvg src={imgSvg} alt="" /> */}
       <AvatarBorder>
         <Avatar src={avatar} alt="" />
       </AvatarBorder>
       <Tweets>777 tweets</Tweets>
-      <Follow>{str.slice(0, 3) + ',' + str.slice(3, 6)} followers</Follow>
+      <Follow>{followLimited} followers</Follow>
       <Button
-        style={{ backgroundColor: follow === n ? '#ebd8ff' : '#5CD3A8' }}
+        style={{
+          backgroundColor: follow === initialValue ? '#ebd8ff' : '#5CD3A8',
+        }}
         type="button"
         onClick={onHandleClick}
       >
