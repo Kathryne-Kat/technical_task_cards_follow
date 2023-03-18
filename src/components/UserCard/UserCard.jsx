@@ -14,16 +14,16 @@ import logo from '../../img/Logo.svg';
 function UserCard({ user }) {
   const { id, tweets, followers, avatar } = user;
 
-  const [allFollow, setAllFollow] = useState(
+  const [follow, setFollow] = useState(
     JSON.parse(localStorage.getItem(id)) ?? followers
   );
 
   useEffect(() => {
-    localStorage.setItem(id, JSON.stringify(allFollow));
-  }, [allFollow, id]);
+    localStorage.setItem(id, JSON.stringify(follow));
+  }, [follow, id]);
 
   const handleClick = () => {
-    setAllFollow(prevState => {
+    setFollow(prevState => {
       if (prevState === followers) {
         return prevState + 1;
       } else {
@@ -39,11 +39,9 @@ function UserCard({ user }) {
         <Avatar src={avatar} alt="" />
       </AvatarBorder>
       <Tweets>{tweets} tweets</Tweets>
-      <Follow>
-        {(allFollow / 1000).toFixed(3).replace('.', ',')} followers
-      </Follow>
+      <Follow>{(follow / 1000).toFixed(3).replace('.', ',')} followers</Follow>
 
-      {allFollow === followers ? (
+      {follow === followers ? (
         <Button type="button" onClick={handleClick}>
           follow
         </Button>
