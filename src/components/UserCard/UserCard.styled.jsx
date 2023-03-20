@@ -101,6 +101,10 @@ export const Button = styled.button`
   border: none;
   border-radius: 10.3px;
   background-color: #ebd8ff;
+  &:hover,:focus{
+    background-color: #9362c9;
+    cursor: pointer;
+  }
 `;
 
 export const ButtonActive = styled.button`
@@ -122,4 +126,8 @@ export const ButtonActive = styled.button`
   border: none;
   border-radius: 10.3px;
   background-color: #5cd3a8;
+  &:hover,:focus{
+    background-color: #9362c9;
+    cursor: pointer;
+  }
 `;

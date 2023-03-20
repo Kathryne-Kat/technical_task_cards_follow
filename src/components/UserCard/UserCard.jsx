@@ -34,9 +34,9 @@ function UserCard({ user }) {
 
   return (
     <Card key={id}>
-      <Logo src={logo} alt="" />
+      <Logo src={logo} alt="logo" width='76px'/>
       <AvatarBorder>
-        <Avatar src={avatar} alt="" />
+        <Avatar src={avatar} alt="avatar" width='62px' />
       </AvatarBorder>
       <Tweets>{tweets} tweets</Tweets>
       <Follow>{(follow / 1000).toFixed(3).replace('.', ',')} followers</Follow>
